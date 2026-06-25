@@ -383,6 +383,40 @@
             }
         }
 
+        /* Dialect Switch Button */
+        .dialect-switch {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,255,255,0.15);
+            border: 2px solid rgba(255,255,255,0.4);
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-family: 'Tajawal', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+            backdrop-filter: blur(4px);
+        }
+
+        .dialect-switch:hover {
+            background: rgba(255,255,255,0.28);
+            border-color: rgba(255,255,255,0.7);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            color: #fff;
+        }
+
+        .dialect-switch .flag {
+            font-size: 1.3rem;
+        }
+
         /* Smooth Scroll */
         html {
             scroll-behavior: smooth;
@@ -401,6 +435,12 @@
         <h1>مقترح ريلز التسويقية البديلة (UGC & Stock)</h1>
         <p>أكاديمية كيفَ التعليمية <a href="https://www.kayfa.io" target="_blank">www.kayfa.io</a></p>
         <p style="margin-top: 12px; font-size: 1.1rem; opacity: 0.9;">دبلومات المستقبل التقنية - خطة إنتاج محتوى مرئي</p>
+        <br>
+        <a href="egyptian.html" class="dialect-switch">
+            <span class="flag">🇪🇬</span>
+            عرض النسخة المصرية
+            <span>←</span>
+        </a>
     </header>
 
     <div class="container">
@@ -577,7 +617,7 @@
     </div>
 
     <footer>
-        <p><strong>بواسطة : محمد خير عابوره</strong> - مقترح الريلز لدبلومات أكاديمية كيفَ التعليمية - نسخة شامية</p>
+        <p><strong>بواسطة : محمد خير عابوره</strong> - مقترح الريلز لدبلومات أكاديمية كيفَ التعليمية - 🇸🇾 نسخة شامية</p>
         <p>رابط المنصة: <a href="https://www.kayfa.io" target="_blank">www.kayfa.io</a></p>
     </footer>
 
