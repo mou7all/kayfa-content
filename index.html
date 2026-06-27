@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خطة إنتاج ريلز أكاديمية كيفَ التعليمية - نسخة شامية</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            /* Educational Blue Palette - Premium */
+            --primary-blue: #00308F;
+            --primary-blue-light: #0047D1;
+            --primary-blue-dark: #001F5C;
+            --secondary-blue: #0052CC;
+            --accent-blue: #4C8FFF;
+            --light-blue: #E8F0FE;
+            --ultra-light-blue: #F5F8FF;
+
+            /* Neutrals */
+            --white: #FFFFFF;
+            --off-white: #FAFBFF;
+            --light-gray: #E2E8F0;
+            --medium-gray: #718096;
+            --dark-gray: #1A202C;
+
+            /* Functional Colors */
+            --success: #059669;
+            --success-light: #D1FAE5;
+            --warning: #D97706;
+            --warning-light: #FEF3C7;
+
+            /* Shadows */
+            --shadow-sm: 0 1px 2px 0 rgba(0, 48, 143, 0.05);
+            --shadow-md: 0 4px 6px -1px rgba(0, 48, 143, 0.1), 0 2px 4px -1px rgba(0, 48, 143, 0.06);
+            --shadow-lg: 0 10px 15px -3px rgba(0, 48, 143, 0.1), 0 4px 6px -2px rgba(0, 48, 143, 0.05);
+            --shadow-xl: 0 20px 25px -5px rgba(0, 48, 143, 0.1), 0 10px 10px -5px rgba(0, 48, 143, 0.04);
+
+            /* Spacing */
+            --radius-sm: 8px;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background: linear-gradient(135deg, #F0F4FF 0%, #E8EFF7 100%);
+            color: var(--dark-gray);
+            margin: 0;
+            padding: 0;
+            line-height: 1.7;
+            letter-spacing: 0.02em;
+        }
+
+        /* Header - Premium Academic Style */
+        header {
+            background: linear-gradient(135deg, var(--primary-blue-dark) 0%, var(--primary-blue) 50%, var(--primary-blue-light) 100%);
+            color: var(--white);
+            padding: 60px 20px;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+            animation: pulse 15s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8rem;
+            font-weight: 800;
+            position: relative;
+            z-index: 1;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.2);
+        }
+
+        header p {
+            margin: 16px 0 0 0;
+            font-size: 1.3rem;
+            opacity: 0.95;
+            position: relative;
+            z-index: 1;
+        }
+
+        header a {
+            color: var(--white);
+            text-decoration: none;
+            background: rgba(255,255,255,0.2);
+            padding: 8px 16px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+        }
+
+        header a:hover {
+            background: rgba(255,255,255,0.3);
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 40px auto;
+            padding: 0 24px;
+        }
+
+        /* Intro Card - Elevated Design */
+        .intro-card {
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            padding: 40px;
+            margin-bottom: 48px;
+            border-right: 6px solid var(--secondary-blue);
+            box-shadow: var(--shadow-xl);
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .intro-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 200px;
+            height: 200px;
+            background: linear-gradient(135deg, var(--light-blue) 0%, transparent 100%);
+            border-radius: 0 0 0 100%;
+        }
+
+        .intro-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 25px 35px -5px rgba(0, 48, 143, 0.15);
+        }
+
+        .intro-card h2 {
+            color: var(--primary-blue);
+            margin-top: 0;
+            font-size: 1.8rem;
+            font-weight: 700;
+            position: relative;
+            z-index: 1;
+        }
+
+        .intro-card p {
+            font-size: 1.1rem;
+            color: var(--medium-gray);
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Diploma Sections - Card-based Design */
+        .diploma-section {
+            background: var(--white);
+            border-radius: var(--radius-lg);
+            padding: 0;
+            margin-bottom: 48px;
+            box-shadow: var(--shadow-lg);
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .diploma-section:hover {
+            box-shadow: var(--shadow-xl);
+        }
+
+        .diploma-header {
+            background: linear-gradient(135deg, var(--light-blue) 0%, var(--ultra-light-blue) 100%);
+            padding: 32px 40px;
+            border-bottom: 2px solid var(--accent-blue);
+        }
+
+        .diploma-title {
+            color: var(--primary-blue);
+            margin: 0 0 12px 0;
+            font-size: 1.9rem;
+            font-weight: 700;
+        }
+
+        .badge-info {
+            background: linear-gradient(135deg, var(--secondary-blue) 0%, var(--primary-blue-light) 100%);
+            color: var(--white);
+            padding: 12px 20px;
+            border-radius: 24px;
+            display: inline-block;
+            font-weight: 600;
+            font-size: 0.95rem;
+            box-shadow: var(--shadow-md);
+            margin-top: 8px;
+        }
+
+        /* Tables - Modern Design */
+        .table-container {
+            padding: 40px;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: separate;
+            border-spacing: 0;
+            background-color: var(--white);
+        }
+
+        thead th {
+            background: linear-gradient(135deg, var(--primary-blue) 0%, var(--primary-blue-light) 100%);
+            color: var(--white);
+            text-align: right;
+            padding: 18px 16px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            letter-spacing: 0.03em;
+            border: none;
+        }
+
+        thead th:first-child {
+            border-radius: 0 var(--radius-md) var(--radius-md) 0;
+        }
+
+        thead th:last-child {
+            border-radius: var(--radius-md) 0 0 var(--radius-md);
+        }
+
+        tbody td {
+            padding: 20px 16px;
+            border-bottom: 1px solid var(--light-gray);
+            font-size: 0.95rem;
+            vertical-align: top;
+            transition: background-color 0.2s ease;
+        }
+
+        tbody tr {
+            transition: background-color 0.2s ease;
+        }
+
+        tbody tr:hover {
+            background-color: var(--ultra-light-blue);
+        }
+
+        tbody tr:last-child td {
+            border-bottom: none;
+        }
+
+        tbody tr:nth-child(even) {
+            background-color: #FAFCFF;
+        }
+
+        tbody tr:nth-child(even):hover {
+            background-color: var(--light-blue);
+        }
+
+        /* Source Badges */
+        .source-stock {
+            color: var(--success);
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            background: var(--success-light);
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        .source-stock::before {
+            content: '📷';
+        }
+
+        .source-ai {
+            color: var(--warning);
+            font-weight: 700;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            padding: 6px 12px;
+            background: var(--warning-light);
+            border-radius: 20px;
+            font-size: 0.85rem;
+        }
+
+        .source-ai::before {
+            content: '✨';
+        }
+
+        /* Code Blocks */
+        code {
+            background: linear-gradient(135deg, var(--light-blue) 0%, var(--ultra-light-blue) 100%);
+            color: var(--primary-blue-dark);
+            padding: 12px 16px;
+            border-radius: var(--radius-sm);
+            font-family: 'Courier New', monospace;
+            display: block;
+            margin-top: 8px;
+            font-size: 0.85rem;
+            border: 1px solid rgba(0, 48, 143, 0.1);
+            line-height: 1.5;
+        }
+
+        /* Footer - Elevated */
+        footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, var(--primary-blue-dark) 0%, var(--primary-blue) 100%);
+            color: var(--white);
+            margin-top: 60px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--accent-blue), var(--secondary-blue), var(--accent-blue));
+        }
+
+        footer p {
+            margin: 8px 0;
+            font-size: 1rem;
+        }
+
+        footer a {
+            color: var(--accent-blue);
+            text-decoration: none;
+            transition: color 0.2s ease;
+        }
+
+        footer a:hover {
+            color: var(--white);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            header p {
+                font-size: 1.1rem;
+            }
+
+            .container {
+                padding: 0 16px;
+                margin: 24px auto;
+            }
+
+            .intro-card,
+            .diploma-section,
+            .table-container {
+                padding: 24px;
+            }
+
+            .diploma-title {
+                font-size: 1.5rem;
+            }
+
+            table {
+                font-size: 0.85rem;
+            }
+
+            thead th,
+            tbody td {
+                padding: 12px 8px;
+            }
+        }
+
+        /* Dialect Switch Button */
+        .dialect-switch {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: rgba(255,255,255,0.15);
+            border: 2px solid rgba(255,255,255,0.4);
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-family: 'Tajawal', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 700;
+            cursor: pointer;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            position: relative;
+            z-index: 1;
+            backdrop-filter: blur(4px);
+        }
+
+        .dialect-switch:hover {
+            background: rgba(255,255,255,0.28);
+            border-color: rgba(255,255,255,0.7);
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+            color: #fff;
+        }
+
+        .dialect-switch .flag {
+            font-size: 1.3rem;
+        }
+
+        /* Smooth Scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Selection Color */
+        ::selection {
+            background-color: var(--accent-blue);
+            color: var(--white);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>مقترح ريلز التسويقية البديلة (UGC & Stock)</h1>
+        <p>أكاديمية كيفَ التعليمية <a href="https://www.kayfa.io" target="_blank">www.kayfa.io</a></p>
+        <p style="margin-top: 12px; font-size: 1.1rem; opacity: 0.9;">دبلومات المستقبل التقنية - خطة إنتاج محتوى مرئي</p>
+        <br>
+        <a href="egyptian.html" class="dialect-switch">
+            <span class="flag">🇪🇬</span>
+            عرض النسخة المصرية
+            <span>←</span>
+        </a>
+    </header>
+
+    <div class="container">
+
+        <!-- مقدمة تسويقية للإدارة -->
+        <div class="intro-card">
+            <h2>📋 الرؤية التسويقية للمشروع</h2>
+            <p>تم استبدال النمط السينمائي المكلف بنمط <strong>UGC (User Generated Content)</strong> والـ <strong>Stock Footage</strong>. هاد الأسلوب بيعتمد على المصداقية والواقعية ومخاطبة عقل واحتياجات الشاب العربي (السوري والعربي) مباشرةً، مع الحفاظ على تكلفة إنتاجية شبه معدومة وقابليتها للتنفيذ الفوري بدون تعقيدات.</p>
+        </div>
+
+        <!-- 1. دبلومة علم البيانات -->
+        <div class="diploma-section">
+            <div class="diploma-header">
+                <h2 class="diploma-title">1. دبلومة علم البيانات (Data Science Diploma)</h2>
+                <div class="badge-info">🎯 الهدف: ربط البيانات بالقرارات اليومية والفرص المالية للشركات والمطورين</div>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 8%;">التوقيت</th>
+                            <th style="width: 37%;">المشهد البصري بالتفصيل</th>
+                            <th style="width: 25%;">مصدر اللقطة وكيفية الحصول عليها</th>
+                            <th style="width: 20%;">الصوت / النص المرافق</th>
+                            <th style="width: 10%;">النص على الشاشة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>0:00 - 0:04</strong></td>
+                            <td><strong>(HOOK – STOP SCROLL):</strong> نص على شاشة بسيطة (white text on dark background) مع فيديو في الخلفية يعرض رسوم بيانية صاعدة بألوان زاهية (أخضر + أزرق)، والنص يظهر تدريجياً مع motion effect. وفي نهاية المشهد، صورة من اليد تمسك هاتف (مشهد UGC بسيط).</td>
+                            <td><span class="source-ai">AI Generation</span><br>برومبت:<br><code>Minimalist dark background with animated rising charts in neon green and blue, typography motion effect, hand holding phone 4K</code><br><br><span class="source-stock">Stock Footage</span><br><em>"Hand holding smartphone close-up"</em></td>
+                            <td>"إنت بتفكر إن Data Science مجرد أرقام ومعادلات؟ غلط. هاد المجال هو اللي بخلّي الشركات تعرف: شو رح تبيع؟ لمين؟ وإيمت؟"
+</td>
+                            <td>مانها مجرد أرقام…
+هي قرارات بتكسب ملايين 💡</td>
+                        </tr>
+                        <tr>
+                            <td><strong>0:04 - 0:12</strong></td>
+                            <td><strong>(WHAT IS IT – SIMPLE EXPLAIN):</strong> مشاهد متسارعة (Fast Montage) توضح أيقونات الشركات الكبرى (Google, Facebook, Instagram). كل أيقونة تظهر مع أرقام ضخمة (ملايين) تطير حول الشاشة، ثم تجمع في سهم واحد يشير نحو رأس شخص (silhouette شاب/بنت).</td>
+                            <td><span class="source-stock">Logo Assets</span><br>استخدم أيقونات الشركات الشهيرة (legal use)<br><br><span class="source-ai">AI Generation</span><br><code>Animated floating numbers and arrows converging to a person silhouette, corporate minimal style, dark background 4K</code></td>
+                            <td>"خليني أوضّحلك الموضوع: كل شركة حواليك (جوجل – فيسبوك – انستغرام) عندها ملايين البيانات كل يوم… بس السؤال: مين الشخص اللي بيخبرهم: شو نبيع؟ على مين نركز؟ شو نعمل؟ هاد اسمه: Data Scientist"</td>
+                            <td>الشخص اللي بيحوّل
+البيانات لقرارات 🧠</td>
+                        </tr>
+                        <tr>
+                            <td><strong>0:12 - 0:20</strong></td>
+                            <td><strong>(WHY IT MATTERS – PAIN):</strong> مقسم الشاشة إلى نصين: اليسار (خسارة) يعرض شركة بصورة حزينة/محبطة مع علامة ❌ حمراء، اليمين (ربح) يعرض نفس الشركة بصورة سعيدة/ناجحة مع علامة ✅ خضراء. التحول بينهم يحصل بـ "swipe" أو "flip" animation.</td>
+                            <td><span class="source-ai">AI Generation</span><br><code>Split screen transition: sad company with red X vs happy company with green checkmark, before-after style, smooth flip animation 4K</code><br><br><span class="source-stock">Stock Footage</span><br><em>"Business team celebrating success"</em> و <em>"Frustrated manager at desk"</em></td>
+                            <td>"من دون تحليل البيانات: الشركات بتخسر ملايين وبتاخد قرارات غلط وبتشتغل 'بالإحساس' بس الشركات الكبيرة؟ بتشتغل بـ DATA حقيقية مو إحساس عشوائي."
+</td>
+                            <td>اللي عنده Data …
+هو اللي بيربح 👑</td>
+                        </tr>
+                        <tr>
+                            <td><strong>0:20 - 0:30</strong></td>
+                            <td><strong>(WHAT YOU LEARN – VALUE STACK):</strong> مشهد "stack" حيث كل skill تظهر كـ card أو block يتراص فوق بعضه (Python → SQL → Statistics → Machine Learning → Data Visualization). كل card فيها icon ملون وتأثير glow. في النهاية يظهر Portfolio حقيقي على laptop أو mobile.</td>
+                            <td><span class="source-ai">AI Generation</span><br><code>3D stacked cards showing programming skills (Python, SQL, Statistics, ML, Data Viz), glowing icons, modern minimalist style, morphing to show real portfolio project 4K</code></td>
+                            <td>"في دبلومة Data Science من أكاديمية كيفَ رح تتعلم: Python - SQL - Statistics - Machine Learning - Data Visualization وما بس هيك… رح تطبق على مشاريع حقيقية وتبني Portfolio تقدر تقدمه لأي شركة."
+</td>
+                            <td>من صفر → ل Data Scientist
+جاهز 🚀</td>
+                        </tr>
+                        <tr>
+                            <td><strong>0:30 - 0:35</strong></td>
+                            <td><strong>(CTA – DIRECT RESPONSE):</strong> نص أبيض على background gradient (من أزرق داكن لأخضر فاتح)، مع animation حيث كلمة "DATA" تظهر بحجم ضخم وتضيء باللون الأخضر، وتحتها يوجد icon لـ WhatsApp/message. والنص يظهر تدريجياً.</td>
+                            <td><span class="source-ai">AI Generation</span><br><code>Gradient background dark blue to light green, large glowing word "DATA" appearing with echo effect, WhatsApp message icon, clean typography 4K</code></td>
+                            <td>"إذا مهتم تدخل المجال الصح… ابدأ هلق في Data Science 📊 اعمللنا فولو وعلّق بكلمة: DATA ورح نبعثلك التفاصيل فورًا"
+</td>
+                            <td>ابدأ قبل ما
+المنافسة تزيد ⏰</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 2. دبلومة تطوير الويب المتكامل -->
+        <div class="diploma-section">
+            <div class="diploma-header">
+                <h2 class="diploma-title">2. دبلومة تطوير الويب المتكامل (Full Stack Development)</h2>
+                <div class="badge-info">🎯 الهدف: معالجة مشكلة التسويف والتشتت وتقديم الحل عبر المسار العملي المنتهي بمشاريع Live</div>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 8%;">التوقيت</th>
+                            <th style="width: 37%;">المشهد البصري بالتفصيل</th>
+                            <th style="width: 25%;">مصدر اللقطة وكيفية الحصول عليها</th>
+                            <th style="width: 20%;">الصوت / النص المرافق</th>
+                            <th style="width: 10%;">النص على الشاشة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>0:00 - 0:05</strong></td>
+                            <td><strong>(HOOK):</strong> شاب/بنت يجلس في غرفة مظلمة بانزعاج واضح، يغلق اللابتوب بحنق، يمسك الهاتف ويبدأ يتصفح بلا هدف. حركات سريعة وموسيقى مقلقة تعبر عن الإحباط والتسويف.</td>
+                            <td><span class="source-stock">Stock / UGC</span><br>تصوير جوال طبيعي أو:<br><em>"Frustrated young person closing laptop, scrolling phone mindlessly, tired expression at night"</em><br><br><span class="source-ai">AI Generation</span><br><code>Close-up cinematic of frustrated tech student, dark room mood, fast cuts between laptop closing and phone scrolling, moody lighting</code></td>
+                            <td>"صرلك كم شهر عم تقول: 'السبت الجاي رح ابدأ أتعلم برمجة'؟ كل مرة بتفتح يوتيوب... بتضيع بين كل هالكورسات، وبالآخر ما تعلمت شي مفيد وما في معك مشروع كامل ولا أخدت خطوة قربتك من الشغل."
+</td>
+                            <td>لسا بتبدأ من جديد
+كل أسبوع؟ 🤯</td>
+                        </tr>
+                        <tr>
+                            <td><strong>0:05 - 0:15</strong></td>
+                            <td><strong>(THE REAL PROBLEM):</strong> مشهد Split-Screen: من جهة شاشة كمبيوتر ملبّة بـ عشرات التبويبات المفتوحة من YouTube و Udemy و platforms مختلفة (بألوان ملبّة)، من الجهة الثانية فتاة/شاب بوجه محبط يحدق في الشاشة. النص "ROADMAP NOT FOUND" أو "NO DIRECTION" يظهر بصريًا.</td>
+                            <td><span class="source-ai">AI Generation</span><br><code>Split screen: overcrowded browser with 50+ tabs in messy colors, opposite side shows confused student looking at screen, warning symbols, lost direction concept 4K</code><br><br><span class="source-stock">Stock Footage</span><br><em>"Person frustrated at computer with many tabs open"</em></td>
+                            <td>"المشكلة مو فيك أبداً... المشكلة إنك عم تمشي من غير خطة واضحة، وما في حدا بيراجع شغلك، ولا حدا بيخبرك شو اللي بتدور عليه الشركات بالفعل."
+</td>
+                            <td>التعلم العشوائي =
+وقت أكتر + نتائج أقل ⏱️</td>
+                        </tr>
+                        <tr>
+                            <td><strong>0:15 - 0:25</strong></td>
+                            <td><strong>(THE SOLUTION):</strong> Animated roadmap يظهر على الشاشة: كل step تظهر بترتيب واضح مع icons ملونة (HTML → CSS → JavaScript → React → Node.js → MongoDB). كل step يضيء عند ظهوره، وفي النهاية يظهر سهم يشير نحو "Complete Web Developer" بـ checkmark أخضر.</td>
+                            <td><span class="source-ai">AI Generation</span><br><code>Animated learning roadmap with glowing steps: HTML, CSS, JS, React, Next.js, Node.js, MongoDB appearing in sequence with neon colors, ending with checkmark trophy, minimalist modern design 4K</code></td>
+                            <td>""في دبلومة Full Stack من أكاديمية كيفَ، رح تتعلم خطوة بخطوة من الصفر: HTML, CSS, JavaScript بعدها React و Next.js ثم Node.js و MongoDB لحد ما تقدر تبني موقع الكتروني متكامل بنفسك."
+</td>
+                            <td>من الصفر لتطبيق كامل 🚀</td>
+                        </tr>
+                        <tr>
+                            <td><strong>0:25 - 0:32</strong></td>
+                            <td><strong>(PROOF & OUTCOME):</strong> لقطة real من portfolio حقيقي/website يفتح في browser (أو تصميم احترافي لموقع)، الـ URL واضح في الأعلى. يليها سكرول في الموقع يعرض مشاريع حقيقية مكتملة وجميلة (Product cards، Projects showcase). في النهاية ظهور شهادة/badge "Live Portfolio".</td>
+                            <td><span class="source-ai">AI Generation</span><br><code>Browser window opening beautiful modern portfolio website, scrolling through completed projects with live production links visible, professional clean design, 4K</code><br><br><span class="source-stock">Stock Footage</span><br><em>"Person smiling in front of computer showing their success"</em></td>
+                            <td>"وما بس هيك...
+كل مشروع رح تشتغل عليه رح ترفعه Live على دومين خاص فيك،
+عشان تبني Portfolio حقيقي تقدر تعرضه للشركات والعملاء."</td>
+                            <td>مشاريع حقيقية •
+Portfolio حقيقي 🌐</td>
+                        </tr>
+                        <tr>
+                            <td><strong>0:32 - 0:35</strong></td>
+                            <td><strong>(CTA):</strong> نص بديهي وقوي يظهر على خلفية gradient (من رمادي داكن لأزرق فاتح). مع animation يعرض ساعة رملية تنهي أو يد تمسك حجز/register، والـ CTA button "احجز مكانك هلق" يومض بلون أخضر/برتقالي.</td>
+                            <td><span class="source-ai">AI Generation</span><br><code>Dark gradient background with glowing CTA button "Register Now", hourglass or urgency timer effect, neon accent colors, clean typography 4K</code></td>
+                            <td>"بعد 6 شهور... يا إما يكون عندك مهارة ومشاريع وبورتفوليو جاهز لسوق العمل... يا إما رح تضل تقول: 'رح ابدأ الأسبوع الجاي.' القرار بإيدك.سجّل هلّق!"
+</td>
+                            <td>احجز مكانك هلق 🚀</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- 3. دورة الهاكر الأخلاقي -->
+        <div class="diploma-section">
+            <div class="diploma-header">
+                <h2 class="diploma-title">3. دورة الهاكر الأخلاقي واختبار الاختراق (Ethical Hacking)</h2>
+                <div class="badge-info">🎯 الهدف: إبراز الأهمية الحيوية للوظيفة لحماية أمن الشركات وبنائها العملي</div>
+            </div>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th style="width: 8%;">التوقيت</th>
+                            <th style="width: 37%;">المشهد البصري بالتفصيل</th>
+                            <th style="width: 25%;">مصدر اللقطة وكيفية الحصول عليها</th>
+                            <th style="width: 20%;">الصوت / النص المرافق</th>
+                            <th style="width: 10%;">النص على الشاشة</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><strong>0:00 - 0:04</strong></td>
+                            <td><strong>(HOOK – STOP SCROLL):</strong> شاشة كمبيوتر تعرض interface لبنك/شركة. فجأة تحويل سريع للون الأحمر مع animation وميض ورموز خطر (warning symbols)، وصوت تنبيه حاد. النص "BREACH IN PROGRESS" أو "SYSTEM COMPROMISED" يظهر بخط عريض أحمر.</td>
+                            <td><span class="source-ai">AI Generation</span><br><code>Cybersecurity alert screen: bank login interface turning red, flashing warning symbols, "BREACH DETECTED" text, high-tech glitch effect, dramatic lighting, macro close-up 4K</code></td>
+                            <td>"تخيل إنه بضغطة زر وحدة… تقدر توقف شركة كاملة، أو الأسوأ… تْسَرِّب بيانات آلاف العملاء بثواني "
+"</td>
+                            <td>غلطة واحدة =
+كارثة كاملة ⚠️</td>
+                        </tr>
+                        <tr>
+                            <td><strong>0:04 - 0:12</strong></td>
+                            <td><strong>(THE REAL DANGER):</strong> مشهد يعرض هاكر في ظلام يكتب كود سريع، شاشات تعرض Terminal بـ أسطر أخضر، في نفس الوقت شركات تظهر في الخلفية وتنهار (visual metaphor). ثم Transition سريع: نفس الهاكر يصبح "الحامي" مع shield وعلامات أمان ✅ تظهر حول الشاشات.</td>
+                            <td><span class="source-ai">AI Generation</span><br><code>Dark cybersecurity scene: hacker at computer with green code terminal, multiple screens showing data breaches, transition to protective shield effect, green checkmarks appearing, cinematic lighting, 4K</code><br><br><span class="source-stock">Stock Footage</span><br><em>"Hacker working at multiple computer screens in dark room"</em></td>
+                            <td>"كل يوم في شركات بتوقّف… مو لأن الأنظمة ضعيفة بس… لكن لأن ما عندهم حدا فهمان كيف يحميها، حدا يكون هو الهاكر… بس يستخدم هالخبرة لحتى يحمي الشركة بدل ما يدمرها."
+</td>
+                            <td>مو كل هاكر بيكسر…
+في هاكر بيحمي 🛡️</td>
+                        </tr>
+                        <tr>
+                            <td><strong>0:12 - 0:20</strong></td>
+                            <td><strong>(WHAT IS ETHICAL HACKING):</strong> animated text يعرض job title "Ethical Hacker / Penetration Tester" مع أيقونات توضح المسؤوليات (Find Vulnerabilities icon، Test Systems icon، Generate Reports icon). كل icon يومض عند ظهوره. في النهاية يظهر checkmark كبير أخضر.</td>
+                            <td><span class="source-ai">AI Generation</span><br><code>Professional animated infographic showing job title "Ethical Hacker" with glowing icons for different responsibilities: vulnerability finding, system testing, report writing, modern cybersecurity aesthetic, dark background with neon accents 4K</code></td>
+                            <td>"هنا بيجي دور الـ Ethical Hacker هاذ الشخص شغلتو يلاقي الثغرات قبل المهاجمين ويجرب يخترق النظام بشكل قانوني وبعدين يسكر الثغرات قبل أي ضرر"
+</td>
+                            <td>تخترق…
+عشان تحمي 🔐</td>
+                        </tr>
+                        <tr>
+                            <td><strong>0:20 - 0:28</strong></td>
+                            <td><strong>(HOW YOU LEARN – VALUE STACK):</strong> Animated skill cards تظهر بترتيب: أساسيات الشبكات (Network Basics) → Security Concepts → Linux & Command Line → Vulnerability Testing → Professional Report Writing. كل card يعرض icon ملون وتفاصيل. في النهاية يظهر "Lab Hands-On" badge مع علامة نجمة.</td>
+                            <td><span class="source-ai">AI Generation</span><br><code>Animated stacked learning cards showing cybersecurity skills (Network Basics, Security, Linux, Penetration Testing, Report Writing), glowing icons, modern minimal design, lab badge appearing 4K</code></td>
+                            <td>"في دبلومة Ethical Hacking من أكاديمية كيفَ رح تتعلم: أساسيات الشبكات - Security Concepts - Linux & Command Line - Vulnerability Testing - كتابة تقارير أمنية احترافية ومع تطبيق عملي ببيئة آمنة"
+</td>
+                            <td>تعلم + تطبيق =
+جاهزية حقيقية 🔒</td>
+                        </tr>
+                        <tr>
+                            <td><strong>0:28 - 0:33</strong></td>
+                            <td><strong>(REALITY SHIFT):</strong> مشهد يعرض statistics/numbers كبيرة عن طلب job opportunities في Cybersecurity (مثل "10,000+ وظائف شاغرة"). الأرقام تطير وتتجمع حول "DEMAND" text كبير. ثم companies logos (Google, Microsoft, Amazon) تظهر يقولون "نبحث عن Ethical Hackers".</td>
+                            <td><span class="source-ai">AI Generation</span><br><code>Animated statistics showing job demand in cybersecurity, large numbers appearing and converging, company logos (Google, Microsoft, Amazon) with hiring message, urgent/high-demand aesthetic, 4K</code></td>
+                            <td>"الشركات هلق ما عم تبحث عن مبرمجين بس… عم تبحث على ناس تقدر تحمي بياناتها وتوقف أي اختراق قبل ما يحصل "
+</td>
+                            <td>الأمن السيبراني =
+وظيفة المستقبل 💼</td>
+                        </tr>
+                        <tr>
+                            <td><strong>0:33 - 0:38</strong></td>
+                            <td><strong>(CTA – STRONG CLOSE):</strong> background gradient نيون (أزرق وأرجواني)، كلمة "HACK" تظهر بحجم ضخم وتضيء، WhatsApp message icon يومض أسفلها. والنص يظهر مع urgency effect (animation سريعة).</td>
+                            <td><span class="source-ai">AI Generation</span><br><code>Neon gradient background (blue-purple), large glowing word "HACK" with echo effect, WhatsApp messaging icon, urgency timer animation, sleek cybersecurity aesthetic 4K</code></td>
+                            <td>"إذا مهتم تدخل مجال عليه طلب عالي جدًا… ابدأ بـ Ethical Hacking هلق، اعمللنا فولو واكتب كلمة HACK بالتعليقات لحتى نبعثلك التفاصيل فورًا."</td>
+                            <td>احمِ المستقبل…
+ابدأ هلق 🛡️</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p><strong>بواسطة : محمد خير عابوره</strong> - مقترح الريلز لدبلومات أكاديمية كيفَ التعليمية - 🇸🇾 نسخة شامية</p>
+        <p>رابط المنصة: <a href="https://www.kayfa.io" target="_blank">www.kayfa.io</a></p>
+    </footer>
+
+</body>
+</html>
